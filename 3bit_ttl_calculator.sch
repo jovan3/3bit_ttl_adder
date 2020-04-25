@@ -2627,11 +2627,11 @@ Full Adder
 Text GLabel 1300 8300 0    50   Input ~ 0
 A2
 Text GLabel 1300 13250 0    50   Input ~ 0
-A2
+A3
 Text GLabel 1300 8850 0    50   Input ~ 0
-A2
+B2
 Text GLabel 1300 13800 0    50   Input ~ 0
-A2
+B3
 Wire Wire Line
 	1300 8300 2000 8300
 Wire Wire Line
@@ -2695,4 +2695,151 @@ Wire Wire Line
 Wire Wire Line
 	6750 12350 6750 13050
 Connection ~ 6750 13050
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5EDF6A0A
+P 13800 1500
+F 0 "J1" H 13828 1526 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 13828 1435 50  0000 L CNN
+F 2 "" H 13800 1500 50  0001 C CNN
+F 3 "~" H 13800 1500 50  0001 C CNN
+	1    13800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5EDF7BF3
+P 13800 1900
+F 0 "J2" H 13828 1926 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 13828 1835 50  0000 L CNN
+F 2 "" H 13800 1900 50  0001 C CNN
+F 3 "~" H 13800 1900 50  0001 C CNN
+	1    13800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EDF85E5
+P 15800 1750
+F 0 "D1" V 15839 1633 50  0000 R CNN
+F 1 "LED" V 15748 1633 50  0000 R CNN
+F 2 "" H 15800 1750 50  0001 C CNN
+F 3 "~" H 15800 1750 50  0001 C CNN
+	1    15800 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5EDF966B
+P 16100 1750
+F 0 "D2" V 16139 1633 50  0000 R CNN
+F 1 "LED" V 16048 1633 50  0000 R CNN
+F 2 "" H 16100 1750 50  0001 C CNN
+F 3 "~" H 16100 1750 50  0001 C CNN
+	1    16100 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5EDF9B28
+P 16400 1750
+F 0 "D3" V 16439 1633 50  0000 R CNN
+F 1 "LED" V 16348 1633 50  0000 R CNN
+F 2 "" H 16400 1750 50  0001 C CNN
+F 3 "~" H 16400 1750 50  0001 C CNN
+	1    16400 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5EDF9FE6
+P 16650 1750
+F 0 "D4" V 16689 1633 50  0000 R CNN
+F 1 "LED" V 16598 1633 50  0000 R CNN
+F 2 "" H 16650 1750 50  0001 C CNN
+F 3 "~" H 16650 1750 50  0001 C CNN
+	1    16650 1750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 15800 1500 1    50   Input ~ 0
+S1
+Wire Wire Line
+	15800 1500 15800 1600
+Text GLabel 16100 1500 1    50   Input ~ 0
+S2
+Text GLabel 16400 1500 1    50   Input ~ 0
+S3
+Wire Wire Line
+	16400 1500 16400 1600
+Wire Wire Line
+	16100 1500 16100 1600
+Text GLabel 16650 1500 1    50   Input ~ 0
+Cout3
+Wire Wire Line
+	16650 1500 16650 1600
+Text GLabel 15800 2100 3    50   Input ~ 0
+GND
+Wire Wire Line
+	15800 2100 15800 2000
+Wire Wire Line
+	15800 2000 16100 2000
+Wire Wire Line
+	16100 2000 16100 1900
+Connection ~ 15800 2000
+Wire Wire Line
+	15800 2000 15800 1900
+Wire Wire Line
+	16100 2000 16400 2000
+Wire Wire Line
+	16400 2000 16400 1900
+Connection ~ 16100 2000
+Wire Wire Line
+	16400 2000 16650 2000
+Wire Wire Line
+	16650 2000 16650 1900
+Connection ~ 16400 2000
+Text GLabel 13500 1400 0    50   Input ~ 0
+A1
+Text GLabel 13500 1500 0    50   Input ~ 0
+A2
+Text GLabel 13500 1600 0    50   Input ~ 0
+A3
+Text GLabel 13500 1800 0    50   Input ~ 0
+B1
+Text GLabel 13500 1900 0    50   Input ~ 0
+B2
+Text GLabel 13500 2000 0    50   Input ~ 0
+B3
+Wire Wire Line
+	13500 1400 13600 1400
+Wire Wire Line
+	13500 1500 13600 1500
+Wire Wire Line
+	13500 1600 13600 1600
+Wire Wire Line
+	13500 1800 13600 1800
+Wire Wire Line
+	13500 1900 13600 1900
+Wire Wire Line
+	13500 2000 13600 2000
+Wire Notes Line
+	13000 1000 13000 2200
+Wire Notes Line
+	13000 2200 14700 2200
+Wire Notes Line
+	14700 2200 14700 1000
+Wire Notes Line
+	14700 1000 13000 1000
+Wire Notes Line
+	15150 2400 17100 2400
+Wire Notes Line
+	17100 2400 17100 1000
+Wire Notes Line
+	17100 1000 15150 1000
+Wire Notes Line
+	15150 1000 15150 2400
+Text Notes 15200 1100 0    50   ~ 0
+Output
+Text Notes 13050 1100 0    50   ~ 0
+Input
 $EndSCHEMATC
